@@ -37,6 +37,7 @@ class Minefield:
 
             if self.calculate_near_mines(current_row, current_col) == 0:
                 stack.extend((r, c) for r, c in get_neighbors(current_row, current_col) if (r, c) not in visited)
+
     def reveal(self, row: int, col: int) -> CellState:
         cell_state = self.__cells[row][col]
         if cell_state == CellState.UNREVEALED:

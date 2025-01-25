@@ -1,4 +1,4 @@
-from enum import Flag, auto, IntFlag
+from enum import Flag, auto
 
 
 class CellState(Flag):
