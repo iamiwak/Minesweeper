@@ -33,7 +33,7 @@ class Game:
         self.__is_game_finished = False  # состояние игры
         self.__is_player_loss = False  # сотсояние игры, для отображения мин
 
-        # todo: по-хорошему надо от этого избавляться, но мне впадлу :)
+        # todo: по-хорошему надо от этого избавляться, но как-нибудь потом... :)
         self.__buttons: list[list[Button | None]] = [[None for _ in range(self.__minefield.get_width())] for _ in
                                                      range(self.__minefield.get_height())]
 
